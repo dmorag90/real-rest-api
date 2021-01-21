@@ -9,7 +9,7 @@ const config = require("config");
 const cors = require("cors");
 mongoose
   .connect(
-    "mongodb+srv://dmorag90:!dm12345!@clusterclass01.9st1q.mongodb.net/test?authSource=admin&replicaSet=atlas-nx108d-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true",
+    "mongodb+srv://dmorag90:!dm12345!@clusterclass01.9st1q.mongodb.net/book_rest_api?authSource=admin&replicaSet=atlas-nx108d-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true",
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
