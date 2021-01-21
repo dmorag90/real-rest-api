@@ -8,10 +8,13 @@ const mongoose = require("mongoose");
 const config = require("config");
 const cors = require("cors");
 mongoose
-  .connect("mongodb://localhost/book_rest_api", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(
+    "mongodb+srv://dmorag90:!dm12345!@clusterclass01.9st1q.mongodb.net/test?authSource=admin&replicaSet=atlas-nx108d-shard-0&readPreference=primary&appname=MongoDB%20Compass%20Community&ssl=true",
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  )
   .then(() => {
     mongoose.set("useFindAndModify", false);
     console.log("Mongo DB is connected");
